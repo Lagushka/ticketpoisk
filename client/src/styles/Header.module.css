@@ -5,8 +5,9 @@
   align-items: center;
   padding: 0 34px 0 32px;
 
+  box-sizing: border-box;
   background-color: #333333;
-  max-width: 1920px;
+  width: 100%;
   height: 84px;
   position: sticky;
 }
@@ -14,6 +15,7 @@
 .heading {
   color: white;
   font-weight: 700;
+  font-size: 32px;
 }
 
 .cart {

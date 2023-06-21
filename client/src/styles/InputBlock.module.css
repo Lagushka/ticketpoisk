@@ -1,0 +1,21 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.title {
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+
+.inputField {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #E1E3E6;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #999FA6;
+}
