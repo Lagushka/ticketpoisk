@@ -9,13 +9,20 @@
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 4px;
+  color: var(--text-primary-color);
 }
 
 .inputField {
   box-sizing: border-box;
   width: 100%;
+  outline: none;
   border: 1px solid #E1E3E6;
   border-radius: 8px;
   padding: 10px 16px;
   color: #999FA6;
+}
+
+.inputField:focus {
+  border-color: var(--interactive-primary-color);
+  color: var(--text-primary-color);
 }

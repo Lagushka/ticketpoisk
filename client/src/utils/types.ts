@@ -15,3 +15,14 @@ export type Film = {
   director: string,
   reviewIds: string[]
 };
+
+export type Cinema = {
+  id: string,
+  name: string,
+  movieIds: string[],
+};
+
+export type Cart = {
+  sum: number,
+  byFilm: Record<string, number>
+}

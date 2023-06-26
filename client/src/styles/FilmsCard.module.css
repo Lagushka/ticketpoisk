@@ -1,0 +1,38 @@
+.fullBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+.fullBlock:visited {
+  color: var(--text-primary-color);
+}
+
+.filmInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.poster {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filmTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filmGenre {
+  font-size: 16px;
+  font-style: italic;
+}

@@ -1,15 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import filmsReducer from "./filmsSlice";
-
-type Cinema = {
-  id: string,
-  name: string,
-  movieIds: string[],
-};
+import cinemasReducer from "./cinemasSlice";
+import cartReducer from "./cartSlice"
 
 export const serviceStore = configureStore({
   reducer: {
-    films: filmsReducer
+    films: filmsReducer,
+    cinemas: cinemasReducer,
+    cart: cartReducer
   }
 });
 

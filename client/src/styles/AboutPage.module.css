@@ -1,0 +1,7 @@
+.block {
+  min-height: 810px;
+  padding: 24px 32px 0 32px;
+  background-color: var(--main-background-color);
+}
+
+.contentBlock {}

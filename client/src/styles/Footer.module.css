@@ -1,0 +1,17 @@
+.footer {
+  height: 86px;
+  background-color: var(--tertiary-background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px 0 32px;
+  bottom: 0;
+  position: sticky;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+  font-size: 20px;
+}

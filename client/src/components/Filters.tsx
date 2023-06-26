@@ -24,8 +24,8 @@ export default function Filters(): ReactElement {
 
   return (
     <div className={classes.filtersBlock}>
-      <h2 className={classes.heading}>Фильтр поиска</h2>
       <form action="" className={classes.filtersDirectly}>
+        <h2 className={classes.heading}>Фильтр поиска</h2>
         {
           filterInputs.map(input => (
             <InputBlock key={input.id} {...input} />

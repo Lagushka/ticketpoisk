@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -9,4 +9,9 @@ body {
   margin: 0;
   --main-background-color: #F5F5F5;
   --secondary-background-color: white;
+  --text-primary-color: #1B1F23;
+  --text-secondary-color: white;
+  --interactive-primary-color: #FF5500;
+  --interactive-secondary-color: #FFA375;
+  --tertiary-background-color: #333333;
 }

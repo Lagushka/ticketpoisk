@@ -1,0 +1,11 @@
+.mainBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.quantity {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-primary-color);
+}
