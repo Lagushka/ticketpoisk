@@ -1,7 +1,7 @@
-import { ReactElement } from "react"
+import { ReactElement } from "react";
 
-import { FilterInput } from "@/utils/types"
-import classes from "@/styles/InputBlock.module.css"
+import { FilterInput } from "@/utils/types";
+import classes from "@/styles/InputBlock.module.css";
 
 export default function InputBlock({title, id, placeholder}: FilterInput): ReactElement {
   return (
@@ -10,4 +10,4 @@ export default function InputBlock({title, id, placeholder}: FilterInput): React
       <input className={classes.inputField} type="text" name={id} id={id} placeholder={placeholder} />
     </div>
   )
-}
+};

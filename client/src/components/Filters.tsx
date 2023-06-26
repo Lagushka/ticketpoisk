@@ -20,7 +20,7 @@ export default function Filters(): ReactElement {
       id: "cinema",
       placeholder: "Выберите кинотеатр"
     }
-  ]
+  ];
 
   return (
     <div className={classes.filtersBlock}>

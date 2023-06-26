@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import Link from "next/link";
 
-import classes from "@/styles/Header.module.css"
+import classes from "@/styles/Header.module.css";
 
 export default function Header(): ReactElement {
   return (
@@ -18,4 +18,4 @@ export default function Header(): ReactElement {
       </button>
     </header>
   )
-}
+};

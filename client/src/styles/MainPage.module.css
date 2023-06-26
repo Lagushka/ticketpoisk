@@ -1,6 +1,8 @@
 .contentBlock {
   background-color: var(--main-background-color);
-  height: 910px;
   box-sizing: border-box;
   padding: 24px 32px;
+
+  display: flex;
+  flex-direction: row;
 }
