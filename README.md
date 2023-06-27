@@ -1,10 +1,10 @@
 # SHRI Ticketsmth
 ## How to
 
-`cd server`  
+`cd server/simple_api`  
 `npm i`  
 `npm run start`  
 
-`cd ../client`  
+`cd ../../client`  
 `npm i`  
 `npm run dev`  
