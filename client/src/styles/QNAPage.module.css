@@ -1,0 +1,26 @@
+.mainBlock {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blockWithTitle {
+  height: 80px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: var(--secondary-background-color);
+  border-radius: 8px;
+}
+
+.heading {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
