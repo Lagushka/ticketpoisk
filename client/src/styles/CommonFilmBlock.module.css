@@ -1,0 +1,14 @@
+.commonBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.commonHeading {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.commonValue {
+  font-size: 20px;
+}

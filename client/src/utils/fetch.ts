@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { addFilms } from "./filmsSlice";
 import { addCinemas } from "./cinemasSlice";
-import { Cinema, Film } from "./types";
+import { Cinema, Film, Review } from "./types";
 
 const API_URL = "http://localhost:3001";
 
@@ -46,5 +46,16 @@ export const fetchCinemas = async (dispatch : ReturnType<typeof useDispatch>): P
     ALL_FETCHED = true
   } catch (error) {
     console.log(error);
+  }
+}
+
+export const fetchReviews = async (filmId: string): Promise<Review[]> => {
+  try {
+    const response = await fetch(`${API_URL}/api/reviews?movieId=${filmId}`);
+    const reviews = await response.json();
+    return reviews
+  } catch ( error) {
+    console.log(error)
+    return []
   }
 }

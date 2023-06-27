@@ -26,3 +26,10 @@ export type Cart = {
   sum: number,
   byFilm: Record<string, number>
 }
+
+export type Review = {
+  id: string,
+  name: string,
+  text: string,
+  rating: number
+}

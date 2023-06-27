@@ -17,7 +17,7 @@ export default function FilmCard({ film, fromCart }: { film: Film, fromCart: boo
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <Link href="" className={classes.fullBlock}>
+    <Link href={`film/${film.id}`} className={classes.fullBlock}>
       <div className={ classes.filmInfo }>
         <Image className={ classes.poster } unoptimized src={film.posterUrl} priority={ true } alt="Poster" width="100" height="120" loader={ imageLoader } />
         <div className={ classes.textInfo }>
