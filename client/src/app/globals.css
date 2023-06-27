@@ -20,3 +20,7 @@ button {
   cursor: pointer;
   padding: 0;
 }
+
+span, p {
+  color: var(--text-primary-color);
+}
