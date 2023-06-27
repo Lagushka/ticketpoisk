@@ -1,7 +1,26 @@
 .block {
-  min-height: 810px;
   padding: 24px 32px 0 32px;
   background-color: var(--main-background-color);
 }
 
-.contentBlock {}
+.contentBlock {
+  background-color: var(--secondary-background-color);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  color: var(--text-primary-color);
+}
+
+.text {
+  font-size: 16px;
+  margin: 0;
+  color: var(--text-primary-color);
+}

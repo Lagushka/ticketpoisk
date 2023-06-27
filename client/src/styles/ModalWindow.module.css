@@ -1,0 +1,83 @@
+.container {
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.modalBlock {
+  width: 344px;
+  height: 168px;
+  border-radius: 8px;
+  background-color: var(--secondary-background-color);
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.topLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.closeButton {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.warning {
+  display: block;
+  font-size: 16px;
+}
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 8px
+}
+
+.yesButton, .noButton {
+  padding: 9px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--interactive-primary-color);
+  font-weight: 500;
+}
+
+.yesButton {
+  background-color: var(--interactive-primary-color);
+  color: var(--text-secondary-color);
+}
+
+.noButton {
+  background-color: var(--secondary-background-color);
+  color: var(--interactive-primary-color);
+}

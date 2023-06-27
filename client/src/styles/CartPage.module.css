@@ -1,0 +1,26 @@
+.block {
+  padding: 24px 32px;
+  display: flex;
+  box-sizing: border-box;
+  min-height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary {
+  height: 68px;
+  margin-top: 40px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 8px;
+}
+
+.text {
+  color: var(--text-primary-color);
+  font-weight: 600;
+  font-size: 20px;
+}

@@ -18,13 +18,19 @@ export const cartSlice = createSlice({
       if (!isNaN(state.byFilm[action.payload])) {
         state.byFilm[action.payload] += 1;
       } else {
-        state.byFilm[action.payload] = 1; 
+        state.byFilm[action.payload] = 1;
       }
       state.sum += 1;
     },
+    deleteTickets: (state, action: PayloadAction<string>) => {
+      if (state.byFilm[action.payload]) {
+        state.sum -= state.byFilm[action.payload]
+      } 
+      state.byFilm[action.payload] = 0
+    }
   }
 })
 
-export const { decrement, increment } = cartSlice.actions;
+export const { decrement, increment, deleteTickets } = cartSlice.actions;
 
 export default cartSlice.reducer;

@@ -5,6 +5,8 @@ import { Cinema, Film } from "./types";
 
 const API_URL = "http://localhost:3001";
 
+export let ALL_FETCHED = false;
+
 const fetchFilm = async (dispatch: ReturnType<typeof useDispatch>, filmId: string): Promise<void> => {
   try {
     const response = await fetch(`${API_URL}/api/movie?movieId=${filmId}`);
@@ -41,6 +43,7 @@ export const fetchCinemas = async (dispatch : ReturnType<typeof useDispatch>): P
     }
 
     await Promise.all(promises);
+    ALL_FETCHED = true
   } catch (error) {
     console.log(error);
   }

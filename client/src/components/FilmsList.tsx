@@ -6,21 +6,22 @@ import { ReactElement, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import FilmCard from "./FilmCard"
 import classes from "@/styles/FilmsList.module.css"
+import { Film } from "@/utils/types"
 
-export default function FilmsList(): ReactElement {
-  const dispatch = useDispatch()
-  const films = useSelector((state: RootState) => state.films)
-
-  useEffect(() => {
-    fetchCinemas(dispatch)
-  }, [dispatch])
+export default function FilmsList({ films }: { films?: Film[] }): ReactElement {
+  const possibleFilms = useSelector((state: RootState) => state.films)
+  let fromCart = false
+  if (!films) {
+    films = possibleFilms
+    fromCart = true
+  }
 
   return (
     <ul className={ classes.list }>
       {
-        films.map((film, index) => (
+        films.map((film) => (
           <li key={film.id} className={ classes.card }>
-            <FilmCard filmIndex={index} />
+            <FilmCard film={film} fromCart={fromCart} />
           </li>
         ))
       }

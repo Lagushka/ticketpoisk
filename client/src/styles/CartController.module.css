@@ -1,6 +1,8 @@
 .mainBlock {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: fit-content;
   gap: 8px;
 }
 

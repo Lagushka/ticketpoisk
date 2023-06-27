@@ -1,4 +1,4 @@
-import { MouseEvent, PropsWithChildren, ReactElement } from "react";
+import { PropsWithChildren, ReactElement } from "react";
 
 import classes from "@/styles/CartButton.module.css"
 
@@ -8,7 +8,7 @@ interface Props extends PropsWithChildren {
 }
 
 export default function CartButton({ handleClick, disabled = false, children }: Props): ReactElement {
-
+  
   return (
     <button 
       className={classes.button}
